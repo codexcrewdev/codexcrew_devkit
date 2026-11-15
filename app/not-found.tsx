@@ -76,7 +76,7 @@ export default function NotFound() {
       </section>
 
       <footer className={styles.footer}>
-        <span>© {new Date().getFullYear()} CodeXcrew</span>
+        <span>CodeXcrew</span>
         <span>Think Beyond. Build What's Next.</span>
       </footer>
     </main>
