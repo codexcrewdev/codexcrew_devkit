@@ -1,0 +1,509 @@
+
+.workspace {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Intro */
+
+.intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 27px;
+}
+
+.introIcon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #c4b5fd;
+  background: #241f31;
+  border: 1px solid #3b3050;
+  border-radius: 10px;
+}
+
+.introContent {
+  min-width: 0;
+}
+
+.eyebrow {
+  margin-bottom: 7px;
+  color: #a995e3;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 1.4px;
+}
+
+.intro h2 {
+  margin: 0;
+  color: #f0edf6;
+  font-size: 23px;
+  letter-spacing: -0.8px;
+}
+
+.intro p {
+  margin: 7px 0 0;
+  color: #8b8795;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* Main panels */
+
+.requestPanel,
+.responsePanel {
+  min-width: 0;
+  overflow: hidden;
+  background: #15151b;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+}
+
+.requestTop,
+.responseHeader {
+  min-height: 48px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #19191f;
+  border-bottom: 1px solid #302e39;
+}
+
+.requestLabel,
+.responseTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #c5bdcf;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.8px;
+}
+
+.requestLabel svg,
+.responseTitle svg {
+  color: #a995e3;
+  flex-shrink: 0;
+}
+
+/* Header actions */
+
+.topActions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.sampleButton {
+  min-height: 28px;
+  padding: 0 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #9995a4;
+  background: #24232b;
+  border: 1px solid #36323f;
+  border-radius: 5px;
+  font-size: 9px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.sampleButton:hover {
+  color: #d4c5ff;
+  border-color: #62517e;
+}
+
+/* Mode tabs */
+
+.modeBar {
+  min-height: 51px;
+  padding: 8px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #19191f;
+  border-bottom: 1px solid #302e39;
+}
+
+.modeTabs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px;
+  background: #111116;
+  border: 1px solid #302e39;
+  border-radius: 6px;
+}
+
+.modeTab {
+  min-width: 75px;
+  height: 27px;
+  padding: 0 12px;
+  color: #85818f;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.modeTab:hover {
+  color: #d8ccf7;
+}
+
+.modeTabActive {
+  color: #d8ccf7;
+  background: #302640;
+  border-color: #51416d;
+}
+
+.modeInfo {
+  color: #85818f;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.5px;
+}
+
+/* Input editor */
+
+.inputEditor,
+.outputEditor {
+  min-width: 0;
+  background: #1e1e1e;
+}
+
+.editorDescription {
+  padding: 10px 13px;
+  color: #8d8997;
+  background: #19191f;
+  border-bottom: 1px solid #302e39;
+  font-size: 9px;
+}
+
+.editorLoading {
+  height: 240px;
+  display: grid;
+  place-items: center;
+  color: #96919f;
+  background: #1e1e1e;
+  font-size: 11px;
+}
+
+/* Request footer */
+
+.requestFooter,
+.responseFooter {
+  min-height: 32px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #777482;
+  background: #19191f;
+  border-top: 1px solid #302e39;
+  font-family: var(--font-mono);
+  font-size: 9px;
+}
+
+/* Process action */
+
+.processActions {
+  min-height: 48px;
+  padding: 8px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #19191f;
+  border-top: 1px solid #302e39;
+}
+
+.processHint {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #85818f;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.processHint svg {
+  flex-shrink: 0;
+  color: #b59b73;
+}
+
+.processButton {
+  min-width: 135px;
+  height: 34px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  flex-shrink: 0;
+  color: #fff;
+  background: #7955d6;
+  border: 1px solid #8b6ae3;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.processButton:hover:not(:disabled) {
+  background: #8968e5;
+  border-color: #a18af0;
+}
+
+.processButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Response */
+
+.responsePanel {
+  margin-top: 19px;
+}
+
+.responseHeader {
+  min-height: 51px;
+}
+
+.responseStats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #9995a4;
+  font-family: var(--font-mono);
+  font-size: 9px;
+}
+
+.responseStats > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.statusSuccess {
+  padding: 5px 8px;
+  color: #8bd6a5;
+  background: #1b3026;
+  border: 1px solid #315541;
+  border-radius: 4px;
+}
+
+/* Error */
+
+.errorBox {
+  margin: 13px;
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #f2a1a1;
+  background: #2c1d22;
+  border: 1px solid #59343a;
+  border-radius: 6px;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.errorBox svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Output metadata */
+
+.outputMetadata {
+  min-height: 36px;
+  padding: 7px 13px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  color: #85818f;
+  background: #19191f;
+  border-top: 1px solid #302e39;
+  font-family: var(--font-mono);
+  font-size: 9px;
+}
+
+/* Response actions */
+
+.responseActionsBar {
+  min-height: 43px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  background: #19191f;
+  border-top: 1px solid #302e39;
+}
+
+.responseActionsBar button {
+  min-height: 28px;
+  padding: 0 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #aaa5b3;
+  background: #24232b;
+  border: 1px solid #36323f;
+  border-radius: 5px;
+  font-size: 9px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.responseActionsBar button:hover {
+  color: #d8ccf7;
+  border-color: #62517e;
+}
+
+/* Empty state */
+
+.emptyResponse {
+  min-height: 220px;
+  padding: 24px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 9px;
+  color: #85818f;
+  text-align: center;
+}
+
+.emptyIcon {
+  width: 47px;
+  height: 47px;
+  display: grid;
+  place-items: center;
+  color: #a995e3;
+  background: #241f31;
+  border: 1px solid #393047;
+  border-radius: 12px;
+  margin-bottom: 3px;
+}
+
+.emptyResponse strong {
+  color: #c9c2d4;
+  font-size: 12px;
+}
+
+.emptyResponse span {
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* Privacy note */
+
+.privacyNote {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  color: #85818f;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.privacyNote svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #b59b73;
+}
+
+/* Responsive */
+
+@media (max-width: 650px) {
+  .intro {
+    gap: 12px;
+    margin-bottom: 21px;
+  }
+
+  .introIcon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .intro h2 {
+    font-size: 21px;
+  }
+
+  .requestTop {
+    flex-wrap: wrap;
+    padding: 10px 12px;
+  }
+
+  .modeBar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .modeInfo {
+    padding-left: 3px;
+  }
+
+  .responseHeader {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .responseStats {
+    gap: 8px;
+  }
+
+  .processActions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .processButton {
+    width: 100%;
+  }
+
+  .outputMetadata {
+    gap: 7px 12px;
+  }
+
+  .responseFooter {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 390px) {
+  .requestFooter {
+    font-size: 8px;
+  }
+
+  .sampleButton {
+    padding: 0 7px;
+    gap: 5px;
+  }
+
+  .responseActionsBar {
+    padding: 7px;
+    flex-wrap: wrap;
+  }
+
+  .responseActionsBar button {
+    flex: 1;
+    justify-content: center;
+  }
+}
